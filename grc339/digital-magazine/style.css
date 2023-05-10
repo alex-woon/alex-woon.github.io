@@ -18,12 +18,13 @@ nav{
     font-weight: 500;
     font-style: normal;
      color: #274C77;
+        border-bottom: 3px solid #274C77;
     
 }
-nav.ul {
-   
-    
+nav li a {
+    display: inline-block;
 }
+
 
 a {
     text-decoration: none;
@@ -36,9 +37,6 @@ a:hover {
 h1 {
     width: 12em;
 }
-
-
-
 h2 {
     font-family: "interstate", sans-serif;
 font-weight: 500;
@@ -52,19 +50,31 @@ font-family: "interstate", sans-serif;
     font-style: normal;
     color: #000000;
     }
-h4
-
-
-
-p {
+h4 {
+    font-family: "interstate", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+h5 {
+    font-family: "interstate", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color:#ba9061;
 }
 
 footer {
 font-family: "interstate", sans-serif;
-    font-weight: 400;
+    font-weight: 350;
     font-style: normal;
     background-color: #274C77;
+    padding: 1em;
     }
+footer ul li a {
+   color: #fffefb;
+
+    
+}
+
 .white_text{
     color: #fffefb;
 }
@@ -74,7 +84,7 @@ font-family: "interstate", sans-serif;
         font-family: "gitan-latin", sans-serif;
 font-weight: 400;
 font-style: normal;
-   color: #274C77; 
+   color:#ba9061;
 }
 
 figure {
@@ -83,6 +93,10 @@ figure {
 
 img {
     width: 100%;
+    padding: 2em, 0em;
+}
+section {
+    padding: 2em, 0em;
 }
 
 ul {
