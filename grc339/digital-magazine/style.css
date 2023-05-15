@@ -1,8 +1,8 @@
 /*CSS document*/
 
 div.container {
-    max-width: 40em;
-    margin: auto;
+    max-width: 80em;
+    margin: 0 auto;
 }
 body {
     
@@ -12,6 +12,11 @@ body {
     font-style: normal;
     color: #000000;
 }
+section {
+    max-width: 40em;
+    margin 0 auto 3em;
+}
+
 
 nav{
     font-family: "interstate", sans-serif;
@@ -24,7 +29,10 @@ nav{
 nav li a {
     display: inline-block;
 }
-
+nav ul li {
+    display: inline;
+    padding: 0 1em;
+}
 
 a {
     text-decoration: none;
@@ -33,6 +41,8 @@ a {
 a:hover { 
   color: #A3CEF1;
 }
+
+
 
 h1 {
     width: 12em;
