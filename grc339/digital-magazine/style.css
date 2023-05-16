@@ -10,7 +10,6 @@ body {
     font-family: "interstate", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #000000;
 }
 section {
     max-width: 40em;
@@ -24,6 +23,7 @@ nav{
     font-style: normal;
      color: #274C77;
         border-bottom: 3px solid #274C77;
+    margin-bottom: 1em;
     
 }
 nav li a {
@@ -81,6 +81,7 @@ font-family: "interstate", sans-serif;
     }
 footer ul li a {
    color: #fffefb;
+    list-style-type: none;
 
     
 }
@@ -109,7 +110,44 @@ section {
     padding: 2em, 0em;
 }
 
+.mainstory
+.secondary
+.tertiary
+.quaternary
+
 ul {
     list-style-type: none;
     padding: 0;
 }
+
+@media screen and (min-width: 60em){
+    
+    div.container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 60px;
+        background-color: ;
+    }
+  
+
+    header{
+        grid-column: 1/6;
+    }
+    main {
+        grid-column: 1/6;
+        display: inline-grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0;
+    }
+    .mainstory{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    aside {
+        grid-column: 5/6;
+        display: block;
+    }
+    footer {
+        grid-column: 1/6;
+        grid-row: 5/6;
+    }

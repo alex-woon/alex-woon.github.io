@@ -1,0 +1,153 @@
+/*CSS document*/
+
+div.container {
+    max-width: 80em;
+    margin: 0 auto;
+}
+body {
+    
+    background-color: #fffefb;
+    font-family: "interstate", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+section {
+    max-width: 40em;
+    margin 0 auto 3em;
+}
+
+
+nav{
+    font-family: "interstate", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+     color: #274C77;
+        border-bottom: 3px solid #274C77;
+    margin-bottom: 1em;
+    
+}
+nav li a {
+    display: inline-block;
+}
+nav ul li {
+    display: inline;
+    padding: 0 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #274C77;
+}
+a:hover { 
+  color: #A3CEF1;
+}
+
+
+
+h1 {
+    width: 12em;
+}
+h2 {
+    font-family: "interstate", sans-serif;
+font-weight: 500;
+font-style: normal;
+    color: #000000;
+    
+}
+h3 {
+font-family: "interstate", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #000000;
+    }
+h4 {
+    font-family: "interstate", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+h5 {
+    font-family: "interstate", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color:#ba9061;
+}
+
+footer {
+font-family: "interstate", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #274C77;
+    padding: 1em;
+    }
+footer ul li a {
+   color: #fffefb;
+    list-style-type: none;
+
+    
+}
+
+.white_text{
+    color: #fffefb;
+}
+
+
+.Sh1{
+        font-family: "gitan-latin", sans-serif;
+font-weight: 400;
+font-style: normal;
+   color:#ba9061;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    padding: 2em, 0em;
+}
+section {
+    padding: 2em, 0em;
+}
+
+.mainstory
+.secondary
+.tertiary
+.quaternary
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 60em){
+    
+    div.container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-column-gap: 60px;
+        background-color: ;
+    }
+  
+
+    header{
+        grid-column: 1/6;
+    }
+    main {
+        grid-column: 1/6;
+        display: inline-grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0;
+    }
+    .mainstory{
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    aside {
+        grid-column: 5/6;
+        display: block;
+    }
+    footer {
+        grid-column: 1/6;
+        grid-row: 5/6;
+    }
