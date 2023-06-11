@@ -16,7 +16,10 @@ body {
     font-style: normal;
 }
 section {
-    margin: 0 auto 3em;
+    padding-bottom: 2em;
+}
+aside {
+        margin: 0 auto 3em;
 }
 
 
@@ -25,15 +28,11 @@ nav{
     font-weight: 500;
     font-style: normal;
      color: #274C77;
-    margin-left: 1em;
     
 }
 nav li a {
     display: inline-block;
-}
-nav ul li {
-   
-    padding: 0 1em;
+    padding-right: 1em;
 }
 
 a {
@@ -48,7 +47,6 @@ a:hover {
 
 h1 {
     width: 12em;
-    padding: 0 1em;
 }
 h2 {font-family: "gitan-latin", sans-serif;
 font-weight: 400;
@@ -103,7 +101,8 @@ font-family: "interstate", sans-serif;
     padding: 1em;
     }
 footer ul li a {
-    color: #fffefb;}
+    color: #fffefb;
+}
 footer ul li{
     list-style-type: none;
 }
@@ -125,9 +124,7 @@ img {
     width: 100%;
     padding: 2em, 0em;
 }
-section {
-    padding: 2em, 0em;
-}
+
 
 
 
@@ -136,82 +133,119 @@ ul {
     padding: 0;
 }
 
+  main.gallery {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(72% + 3em);}    
+    figure.gallery{
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+    .pnav{
+    display: grid;
+    grid-template-columns:repeat(8, 1fr);
+    grid-gap: 0.2em;
+    margin-bottom: 1em;
+    }
+
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1;
+}
+
+    input.gallery {
+    display:none;
+    }
+
 @media screen and (min-width: 60em){
     
     div.container {
         display: grid;
         grid-template-columns: 4fr 0.8fr;
         grid-column-gap: 1em;
+        
+    }
+     div.about {
+       max-width: 60em;
+       margin:auto;
     }
    div.culture {
         display: grid;
-        grid-template-columns: 4fr 0.8fr;
+        grid-template-columns: 3fr 1fr;
         grid-column-gap: 1em;
-       max-width: 80em;
+       max-width: 60em;
        margin:auto;
     }
     main.story {
         display:block;
-        max-width: 40em;
         margin:auto;
     }
-nav ul li {
+    div.coast{
+        display: grid;
+        grid-template-columns: 4fr 0.8fr;
+        grid-column-gap: 1em;
+        max-width: 60em;
+       margin:auto;
+    }
+    div.lifestyle {
+        display: grid;
+        grid-template-columns: 4fr 0.8fr;
+        grid-column-gap: 1em;
+        max-width: 60em;
+       margin:auto;
+    }   
+     div.gallery {
+       max-width: 60em;
+       margin:auto;
+         
+    }
+    div.newsletter {
+        max-width: 60em;
+       margin:auto;
+    }
+
+    
+    nav ul li {
     display: inline-block;}
+   
     header{
         grid-column: 1/3;
     }
+    
     main {
         grid-column: 1/2;
         display: grid;
         grid-template-columns: 1.5fr 3fr;
         margin: 0;
         grid-column-gap: 1em;
+        overflow: none;
+    
     }
-   
-    }
+    
     main.newsletter {
         grid-template-columns: none;
         margin: auto;
     }
    
-    }
-    .mainstory{
+    section.mainstory{
         grid-column: 2/3;
         grid-row: 1/3;
     }
    section.secondary {
         grid-column: 1/2;
         
-    }
-    
-       
-    
-    .photogallery{
-    margin: 0;
-    width: calc(100%-2em);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-    overflow: hidden;
-    padding-bottom: calc(72% + 3em);
-        
-}
-    .pnav{
-    display: grid;
-    grid-template-columns:repeat(4, 1fr);
-    grid-gap: 0.2em;
-    }
+    }  
 
-input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
-input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
-input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
-input:nth-of-type(4):checked ~ main figure:nth-of-type(4){
-    opacity: 1;
-}
-    input {
-    display:none;
-    }
-   
     aside {
         grid-column: 2/3;
         display: block;
